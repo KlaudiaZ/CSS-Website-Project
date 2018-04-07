@@ -3,9 +3,64 @@
 }
 
 body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
     font-family: 'Titillium Web', sans-serif;
     font-size: 16px;
     line-height: 1.2;
     margin: 0;
     padding: 0;
+}
+
+.master-content {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/top-logo.png"), url("../img/bottom-logo.png"), url("../img/background.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top center, bottom right, center center;
+    background-size: auto, auto, cover;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    border: 20px solid rgba(117, 29, 38, 0.1);
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.form-field {
+    background-color transparent;
+    border-radius: 5px;
+}
+
+input {
+    padding: 12px 0;
+    display: block;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    display: inline;
+    border: 1px solid rgb(198, 198, 198);
+}
+
+.button {
+    display: block;
+}
+
+.header {
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#username {
+    background: url("../img/user-icon.png") no-repeat left center;
+    background-size: auto;
+    padding-left: 23px;
 }

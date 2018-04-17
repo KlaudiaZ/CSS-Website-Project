@@ -1,55 +1,119 @@
-* body html {
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    height: -moz-fit-content;
 }
 
 body {
     display: block;
-    width: 100vw;
-    height: 100vh;
     font-family: 'Titillium Web', sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    margin: 0;
-    padding: 0;
+    height: 100%;
 }
 
 .master-content {
     width: 100%;
-    height: 100%;
     background-image: url("../img/top-logo.png"), url("../img/bottom-logo.png"), url("../img/background.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: top center, bottom right, center center;
     background-size: auto, auto, cover;
 }
 
+.column {
+    width: 35%;
+}
+
 .form-container {
     width: 100%;
-    height: 100%;
     border: 20px solid rgba(117, 29, 38, 0.1);
     border-radius: 5px;
     margin-bottom: 40px;
 }
 
+form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+textarea {
+    resize: none;
+    padding-left: 10px;
+    width: 100%;
+}
+
 .form-field {
-    background-color transparent;
+    background-color: transparent;
     border-radius: 5px;
 }
 
-input {
+.input {
     padding: 12px 0;
     display: block;
+    background-color: #fff;
     border: 1px solid rgb(198, 198, 198);
     border-radius: 4px;
     margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: light;
+    width: 100%;
+}
+
+.input::-webkit-input-placeholder {
+    color: rgb(175, 175, 175);
+}
+
+.input::-moz-placeholder {
+    color: rgb(175, 175, 175);
+}
+
+.input:-ms-input-placeholder {
+    color: rgb(175, 175, 175);
+}
+
+.input:-moz-placeholder {
+    color: rgb(175, 175, 175);
+}
+
+label {
+    color: rgb(175, 175, 175);
+}
+
+.button {
+    width: 100%;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.green {
+    background-color: rgb(159, 213, 58);
+    border: 1px solid rgb(59, 154, 0);
+}
+
+.light-green {
+    background-color: rgb(195, 223, 161);
+    border: 1px solid rgb(109, 202, 109);
+}
+
+.red {
+    background-color: rgb(245, 83, 101);
+    border: 1px solid rgb(162, 32, 42);
 }
 
 .checkbox {
     display: inline;
     border: 1px solid rgb(198, 198, 198);
-}
-
-.button {
-    display: block;
+    /*not finished yet*/
 }
 
 .header {
@@ -57,10 +121,35 @@ input {
     font-weight: normal;
     margin-bottom: 20px;
     color: white;
+    text-align: center;
 }
 
-#username {
-    background: url("../img/user-icon.png") no-repeat left center;
+.username {
+    background: white url("../img/user-icon.png") no-repeat left 10px center;
     background-size: auto;
-    padding-left: 23px;
+    padding-left: 40px;
+}
+
+.password {
+    background: white url("../img/lock-icon.png") no-repeat left 10px center;
+    background-size: auto;
+    padding-left: 40px;
+}
+
+.confirm-password {
+    background: white url("../img/lock-icon.png") no-repeat left 10px center;
+    background-size: auto;
+    padding-left: 40px;
+}
+
+.email {
+    background: white url("../img/mail-icon.png") no-repeat left 10px center;
+    background-size: auto;
+    padding-left: 40px;
+}
+
+.location {
+    background: white url("../img/map-icon.png") no-repeat left 10px center;
+    background-size: auto;
+    padding-left: 40px;
 }

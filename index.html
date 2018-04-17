@@ -13,19 +13,42 @@
 
 <body>
     <div class="master-content">
-        <div class="whole-form-field">
-            <h2 class="header">Register Form</h2>
-            <div class="form-container form-field register-form">
-                <form>
-                    <input type="text" name="username" id="username" placeholder="Username">
-                    <input type="password" name="password" id="password" placeholder="Password">
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                    <input type="text" name="location" id="location" placeholder="Your Location">
-                    <input type="checkbox" name="terms-of-use" id="terms-of-use" class="checkbox">
-                    <label for="terms-of-use">I have read and accept the terms of use.</label>
-                    <button name="sign-up" id="sign-up" class="button green">Sign up</button>
-                </form>
+        <div class="left column">
+            <div class="register-form">
+                <h2 class="header">Register Form</h2>
+                <div class="form-container form-field register-form">
+                    <form>
+                        <input class="input username" type="text" name="username" id="username" placeholder="Username">
+                        <input class="input password" type="password" name="password" id="password" placeholder="Password">
+                        <input class="input confirm-password" type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+                        <input class="input email" type="email" name="email" id="email" placeholder="Email">
+                        <input class="input location" type="text" name="location" id="location" placeholder="Your Location">
+                        <input type="checkbox" name="terms-of-use" id="terms-of-use" class="checkbox">
+                        <label for="terms-of-use">I have read and accept the terms of use.</label>
+                        <button name="sign-up" id="sign-up" class="button green">Sign up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="send-email">
+                <h2 class="header">Send Email</h2>
+                <div class="form-container form-field send-email">
+                    <form>
+                        <input class="input username" type="text" name="email-name" id="email-name" placeholder="Your Name">
+                        <input class="input email" type="text" name="email-email" id="email-email" placeholder="Your Email">
+                        <textarea class="input" name="email-message" id="email-message" placeholder="Type your message..."></textarea>
+                        <input type="checkbox" name="send-copy" id="send-copy" class="checkbox">
+                        <label for="send-copy">Send a copy to my Email</label>
+                        <button name="send-email" id="send-email-button" class="button green">Send Email</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="right column">
+            <div class="Sign-in-form">
+                <h2 class="header">Sign In Form</h2>
+                <div class="form-container form-field sign-in-form">
+
+                </div>
             </div>
         </div>
     </div>

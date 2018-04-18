@@ -25,7 +25,7 @@
                         <input class="input location" type="text" name="location" id="location" placeholder="Your Location">
                         <input type="checkbox" name="terms-of-use" id="terms-of-use" class="checkbox">
                         <label for="terms-of-use">I have read and accept the terms of use.</label>
-                        <button name="sign-up" id="sign-up" class="button green">Sign up</button>
+                        <button type="submit" name="sign-up" id="sign-up" class="button green">Sign up</button>
                     </form>
                 </div>
             </div>
@@ -34,11 +34,11 @@
                 <div class="form-container form-field send-email">
                     <form>
                         <input class="input username" type="text" name="email-name" id="email-name" placeholder="Your Name">
-                        <input class="input email" type="text" name="email-email" id="email-email" placeholder="Your Email">
+                        <input class="input email" type="email" name="email-email" id="email-email" placeholder="Your Email">
                         <textarea class="input" name="email-message" id="email-message" placeholder="Type your message..."></textarea>
                         <input type="checkbox" name="send-copy" id="send-copy" class="checkbox">
                         <label for="send-copy">Send a copy to my Email</label>
-                        <button name="send-email" id="send-email-button" class="button green">Send Email</button>
+                        <button type="submit" name="send-email" id="send-email-button" class="button green">Send Email</button>
                     </form>
                 </div>
             </div>
@@ -47,7 +47,46 @@
             <div class="Sign-in-form">
                 <h2 class="header">Sign In Form</h2>
                 <div class="form-container form-field sign-in-form">
-
+                    <form>
+                        <input class="input username" type="text" name="username" placeholder="Username">
+                        <input class="input password" type="password" name="password" placeholder="Password">
+                        <input type="checkbox" name="remember-me" class="checkbox">
+                        <label for="remember-me">Remember me</label>
+                        <div class="inline">
+                            <button type="submit" name="sign-in" id="sign-in-button" class="button green">Sign in</button>
+                        </div>
+                        <div style="clear: both;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="recover-form">
+                <h2 class="header">Recover Form</h2>
+                <div class="form-container form-field recover-form">
+                    <form>
+                        <input class="input email" type="email" name="email" placeholder="Enter your Email">
+                        <input class="input tel" type="tel" name="password" placeholder="Enter your Phone number">
+                        <div class="inline-no-float">
+                            <button type="submit" name="send" id="send-button" class="button green">Send</button>
+                        </div>
+                        <div class="inline-no-float">
+                            <button type="button" name="done" id="done-button" class="button light-green">Done</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="subscribe">
+                <h2 class="header">Subscribe Form</h2>
+                <div class="form-container form-field subscribe-form">
+                    <form>
+                        <input class="input email" type="email" name="email" placeholder="Enter your Email">
+                        <div class="inline-no-float">
+                            <button type="submit" name="subscribe" id="subscribe-button" class="button green">Subscribe</button>
+                        </div>
+                        <div class="inline-no-float">
+                            <button type="reset" name="no-thanks" id="no-button" class="button red">No, Thanks</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
